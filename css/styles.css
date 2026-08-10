@@ -161,19 +161,23 @@ article {
 .article-image {
     width: 35%;
     min-width: 120px;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff;
 }
 
 .article-image img,
 .article-image video {
     width: 100%;
+    height: 100%;
     max-width: 100%;
     display: block;
-    object-fit: cover;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: auto;
+    object-fit: contain;
 }
 
 .article-content {
